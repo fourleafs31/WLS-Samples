@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE weblogic-web-app
+  PUBLIC "-//BEA Systems, Inc.//DTD Web Application 8.1//EN"
+  "http://www.bea.com/servers/wls810/dtd/weblogic810-web-jar.dtd">
+
+<weblogic-web-app>
+<!-- for cluster
+  <session-descriptor>
+    <persistent-store-type>replicated</persistent-store-type>
+  </session-descriptor >
+-->
+     <jsp-descriptor>
+       <jsp-param>
+         <param-name>
+           pageCheckSeconds
+         </param-name>
+         <param-value>
+           1
+         </param-value>
+       </jsp-param>
+       <jsp-param>
+         <param-name>
+           verbose
+         </param-name>
+         <param-value>
+           true
+         </param-value>
+       </jsp-param>
+       <jsp-param>
+         <param-name>
+           keepgenerated
+         </param-name>
+         <param-value>
+           true
+         </param-value>
+       </jsp-param>
+     </jsp-descriptor>
+
+<!--	<wl-dispatch-policy>WorkManager01</wl-dispatch-policy>-->
+
+</weblogic-web-app>
